@@ -17,7 +17,7 @@ describe('Portfolio', function(){
     it('should add stocks to portfolio', function(){
       var port = new Portfolio('Tech Portfolio');
       port.add('aapl', 50);
-      port.add('amzn', 35);
+      port.add('msft', 35);
       port.add('aapl', 25);
 
       expect(port.stocks[0]).to.be.instanceof(Stock);
